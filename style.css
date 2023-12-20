@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    height: 70px;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+}
+
+header h1 a:hover {
+    color: gold;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.atas {
+    width: 90%;
+    margin: 0 auto;
+    background-color: black;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.atas a {
+    color: white;
+}
+
+.atas:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#id {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: black;
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: white;
+}
+
+.sidebar ul li {    
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover {
+    background-color: gray;
+}
+
+.sidebar ul li a:hover {
+    color: gold;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/92/af/94/92af94f82ea96bb10c17d3c4136a754b.gif);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.tulisan h1 {
+    margin-top: 270px;
+    font-size: 60px;
+}
+
+.tulisan h3 {
+    font-size: 30px;
+}
+
+.tulisan button {
+    margin-top: 60px;
+    border-radius: 10%;
+    color: black;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: black;
+    background-repeat: no-repeat;
+    border: 1px solid;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: 1s;
+}
+
+.tulisan button a:hover {
+    color: gold;
+}
+
+.tulisan button a {
+    color: white;
+}
+
+aside {
+    padding: 40px;
+    margin-top: 90px;
+}
+
+.gambar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gambar2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.gambar img {
+    height: 250px;
+    width: 350px;
+    flex-wrap: wrap;
+}
+
+.kalimat h2 {
+    font-size: 50px;
+}
+
+.kalimat section p {
+    font-size: 36px;
+}
+
+.kalimat article h3 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.kalimat article p{
+    font-size: 28px;
+    padding: 10px;
+}
+
+hr {
+    border-color: black;
+}
+
+.main-inti {
+    padding: 100px;
+}
+
+.main-inti h1 {
+    font-size: 50px;
+    padding-top: 40px;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center; 
+}
+
+.artikel {
+    border: 3px solid;
+    width: 40%;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 250px;
+}
+
+.artikel p {
+    color: black;
+}
+
+i:hover {
+    color: gold;
+}
+
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
